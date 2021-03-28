@@ -1,0 +1,29 @@
+.header {
+}
+
+.navbar {
+  display: flex;
+  padding: 1rem 7rem;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    color: #000;
+  }
+}
+
+.logo {
+  width: 60px;
+  transform: scale(1);
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(0.95);
+    transition: all 0.2s;
+  }
+}
+
+.nav-links {
+}
