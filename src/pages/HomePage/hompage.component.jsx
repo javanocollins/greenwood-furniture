@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Directory from "../../components/directory/directory.component";
 import MenuItem from "../../components/menu-item/menu-item.component";
 import "./homepage.styles.scss";
@@ -13,20 +14,35 @@ const HomePage = () => {
             Greenwood
             <br /> Furniture
           </h2>
-          <button className="collection-btn">View Collection</button>
+          <button className="collection-btn"><Link to="/collection">View Collection</Link></button>
         </div>
         <Directory />
       </div>
       <div className="about-section">
         <div className="about-paragraph">
           <h2>About</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae praesentium officia laudantium eligendi quas voluptatem sapiente, fugiat at esse cum, iure nobis quam mollitia! Aspernatur reiciendis veritatis atque provident tempore iure fuga, corrupti sequi illum amet numquam sed laboriosam consequuntur?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repudiandae praesentium officia laudantium eligendi quas voluptatem
+            sapiente, fugiat at esse cum, iure nobis quam mollitia! Aspernatur
+            reiciendis veritatis atque provident tempore iure fuga, corrupti
+            sequi illum amet numquam sed laboriosam consequuntur?
+          </p>
 
-          <br/>
+          <br />
 
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quas recusandae distinctio perspiciatis! Esse magnam, ab aliquam ut sint a, sit eaque impedit illo ex odio placeat voluptatum quaerat ipsam!</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+            quas recusandae distinctio perspiciatis! Esse magnam, ab aliquam ut
+            sint a, sit eaque impedit illo ex odio placeat voluptatum quaerat
+            ipsam!
+          </p>
         </div>
-        <img className="about-sofa" src={require('../../assets/images/sofa-hd.png').default} alt=""/>
+        <img
+          className="about-sofa"
+          src={require("../../assets/images/sofa-hd.png").default}
+          alt=""
+        />
       </div>
     </div>
   );
