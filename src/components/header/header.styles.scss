@@ -3,15 +3,9 @@
 
 .navbar {
   display: flex;
-  padding: .7rem 7rem;
+  padding: 0.7rem 7rem;
   justify-content: space-between;
   align-items: center;
-
-  a {
-    margin: 0 0.5rem;
-    font-size: 1.2rem;
-    color: #000;
-  }
 }
 
 .logo {
@@ -26,4 +20,15 @@
 }
 
 .nav-links {
+  a {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #000;
+    transition: all .2s;
+    
+    &:hover {
+      color: #777;
+      transition: all .2s;
+    }
+  }
 }

@@ -1,5 +1,8 @@
 import React from "react";
-import './collection-preview.styles.scss'
+import "./collection-preview.styles.scss";
+
+// Component imports
+import CollectionItem from "../collection-item/collection-item.component";
 
 const CollectinPreview = ({ title, items }) => {
   return (
@@ -8,13 +11,7 @@ const CollectinPreview = ({ title, items }) => {
       <div className="preview">
         {/* Render 4 items from shop.data.js */}
         {items.slice(0, 4).map((item) => (
-          <div className="full-item" key={item.id}>
-            <img className='item-image' src={`${item.imageUrl}`} alt="" />
-            <div className="item-description">
-              <p>{item.name}</p>
-              <p>{item.price}</p>
-            </div>
-          </div>
+          <CollectionItem items={items} collectionItem={item} />
         ))}
       </div>
     </div>
