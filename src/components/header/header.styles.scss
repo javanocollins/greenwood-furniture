@@ -20,15 +20,17 @@
 }
 
 .nav-links {
-  a {
-    padding: 0.5rem;
+  transition: all 0.2s;
+  display: flex;
+
+  .nav-link {
     font-size: 1.2rem;
+    padding: 0.5rem;
     color: #000;
-    transition: all .2s;
-    
+    cursor: pointer;
     &:hover {
       color: #777;
-      transition: all .2s;
+      transition: all 0.2s;
     }
   }
 }

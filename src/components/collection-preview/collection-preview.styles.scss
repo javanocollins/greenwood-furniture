@@ -1,10 +1,15 @@
 @import '../../assets//styles/padding';
 
-
 .preview {
   display: flex;
   padding: $pd-md;
   justify-content: center;
 }
+
+.itemTitle {
+  font-size: 1.7rem;
+}
+
+
 
 

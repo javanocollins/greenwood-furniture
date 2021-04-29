@@ -7,7 +7,7 @@ import CollectionItem from "../collection-item/collection-item.component";
 const CollectinPreview = ({ title, items }) => {
   return (
     <div className="collection-preview container">
-      <h1 className="itemTitle">{title}</h1>
+      <h2 className="itemTitle">{title}</h2>
       <div className="preview">
         {/* Render 4 items from shop.data.js */}
         {items.slice(0, 4).map((item) => (

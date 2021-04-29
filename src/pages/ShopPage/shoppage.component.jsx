@@ -12,7 +12,8 @@ export class ShopPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
+        <h1>Collections</h1>
         {this.state.collections.map((item) => (
           <CollectionPreview title={item.title} items={item.items} />
         ))}
