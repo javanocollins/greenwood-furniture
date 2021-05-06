@@ -1,0 +1,51 @@
+.Payments {
+    // justify-content: center;
+    background-image: url('../../../assets//images/double-bubble-dark.png');
+    
+    .Payments-container {
+        display: flex;
+        padding: 3rem 5rem;
+        background-color: #2b2b2bb2;
+
+    }
+
+    .Payments-option,
+    .Payments-courier {
+        color: #000;
+        font-size: 1.8rem;
+    }
+
+    .Payments-head {
+            font-size: 1.3rem;
+            color: #fff;
+        }
+
+    .col-1 {
+        margin-right: 4rem;
+        .Payments-options {
+            div {
+                background-color: #ffffff;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.4rem 0.8rem;
+                border-radius: 5px;
+                margin: 8px 8px 0 0;
+            }
+        }
+    }
+
+    .col-2 {
+        .Payments-couriers {
+            div {
+                background-color: #ffffff;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.4rem 0.8rem;
+                border-radius: 5px;
+                margin: 8px 8px 0 0;
+            }
+        }
+    }
+}

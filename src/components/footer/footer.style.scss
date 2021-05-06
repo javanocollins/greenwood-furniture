@@ -1,0 +1,61 @@
+.Footer {
+    // margin: 3rem 0 0;
+    &-container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: rgb(53, 58, 64);
+        display: grid;
+        grid-template-columns: 330px 100px 100px 400px;
+        justify-content: space-between
+        ;
+
+        .row {
+            color: #fff;
+
+            li {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    &-name {
+        color: #7b9d81;
+        font-size: 2rem;
+    }
+
+    &-icons {
+        color: #fff;
+        font-size: 1.7rem;
+    }
+    .Footer-icon {
+        margin: 8px 8px 0 0;
+    }
+}
+
+.Footer-category {
+    color: #7b9d81;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.row-4 {
+    input {
+        padding: 0.6rem;
+        width: 100%;
+        margin-bottom: 4px;
+        width: 70%;
+    }
+
+    button {
+        padding: 0.6rem;
+        width: 70%;
+        border: none;
+        color: #fff;
+        background-color: #F44006;
+    }
+
+    &-text {
+        margin-bottom: 32px;
+    }
+}
