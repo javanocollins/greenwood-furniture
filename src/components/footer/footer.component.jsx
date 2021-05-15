@@ -16,7 +16,7 @@ import {
 function Footer() {
     return (
         <div className="Footer">
-            <Payments />
+            {/* <Payments /> */}
             <div className="Footer-container container">
             <div className=" row row-1">
                 <h2 className="Footer-name">Greenwood Furniture</h2>

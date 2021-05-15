@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Directory from "../../components/directory/directory.component";
+import Payments from "../../components/footer/accepted-payments/payments.component";
 
 import "./homepage.styles.scss";
 
@@ -14,9 +15,11 @@ const HomePage = () => {
                         Greenwood
                         <br /> Furniture
                     </h2>
-                    <button className="collection-btn">
-                        <Link to="/collection">View Collection</Link>
-                    </button>
+                    <Link to="/collection">
+                        <button className="collection-btn">
+                            View Collection
+                        </button>
+                    </Link>
                 </div>
                 <Directory />
             </div>
@@ -63,9 +66,8 @@ const HomePage = () => {
                         elit. Voluptatum beatae dicta blanditiis asperiores
                         assumenda sapiente sunt! Optio voluptatum rerum
                         perferendis fugiat sequi. Laboriosam, repudiandae
-                        accusamus.
                     </p>
-                    <br/>
+                    <br />
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Voluptatum beatae dicta blanditiis asperiores
@@ -73,7 +75,7 @@ const HomePage = () => {
                         perferendis fugiat sequi. Laboriosam, repudiandae
                         accusamus.
                     </p>
-                    <br/>
+                    <br />
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Voluptatum beatae dicta blanditiis asperiores
@@ -92,6 +94,7 @@ const HomePage = () => {
                     allowfullscreen
                 ></iframe>
             </section>
+            <Payments />
         </div>
     );
 };

@@ -17,7 +17,7 @@ const CollectionItem = ({ items, collectionItem }) => {
           setStyle({ display: "none" });
         }}
       >
-        <img className="item-image" src={`${collectionItem.imageUrl}`} alt="" />
+        <img className="item-image" src={require(`./../../assets/images/${collectionItem.imageUrl}`).default} alt="" />
         <button style={style} className="add-to-cart-btn">
           Add to cart
         </button>
