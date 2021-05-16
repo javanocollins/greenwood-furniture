@@ -28,6 +28,12 @@ const SHOP_DATA = [
                 imageUrl: "sofas/4.jpg",
                 price: 25,
             },
+            {
+                id: 4,
+                name: "Grey Brim",
+                imageUrl: "sofas/4.jpg",
+                price: 25,
+            },
         ],
     },
     {
