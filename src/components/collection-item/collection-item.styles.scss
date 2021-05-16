@@ -2,6 +2,10 @@
 
 .item {
   display: flex;
+  border: 1px rgb(209, 209, 209) solid;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 0 10px;
 }
 
 .full-item {
@@ -19,6 +23,6 @@
 }
 
 .item-image {
-  width: 300px;
-  height: 400px;
+  width:240px;
+  // height: 320px;
 }

@@ -2,12 +2,12 @@
 
 .add-to-cart-btn {
     position: absolute;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     color: #000;
     background-color: #fff;
-    width: 90%;
-    height: 12%;
+    width: 70%;
+    height: 18%;
     top: 80%;
     left: 50%;
     border: none;
@@ -18,9 +18,9 @@
     
     &:hover {
         background-color: #000;
-        font-size: 1rem;
-        width: 89%;
-        height: 11%;
+        font-size: .9rem;
+        width: 65%;
+        height: 14%;
         color: #fff;
         opacity: 1;
         transition: all .1s;

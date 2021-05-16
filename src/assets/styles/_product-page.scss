@@ -1,0 +1,11 @@
+.ProductPage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.ProductPage-item {
+    margin: .5rem 0;
+    // display: flex;
+}
