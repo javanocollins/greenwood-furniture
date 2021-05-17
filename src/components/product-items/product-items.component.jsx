@@ -5,8 +5,10 @@ import './product-items.style.scss'
 
 import SHOP_DATA from '../../pages/ShopPage/shop.data';
 
+import { withRouter } from "react-router-dom";
 
-function ProductItems({products}) {
+
+function ProductItems({ products }) {
     return (
         <div className="TablesPage ProductPage container">
             {products.items.map((item) => {

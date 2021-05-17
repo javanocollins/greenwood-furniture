@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import "./collection-item.styles.scss";
 import "../../assets/styles/_button.scss";
 
-const CollectionItem = ({ items, collectionItem }) => {
-  const [style, setStyle] = useState({ display: "none" });
+import { withRouter } from "react-router-dom";
+
+const CollectionItem = ({ items, collectionItem, history, match }) => {
+    const [style, setStyle] = useState({ display: "none" });
+    
 
   return (
       <div className="item">
@@ -37,4 +40,4 @@ const CollectionItem = ({ items, collectionItem }) => {
   );
 };
 
-export default CollectionItem;
+export default withRouter(CollectionItem);

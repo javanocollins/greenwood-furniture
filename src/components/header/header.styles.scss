@@ -35,3 +35,14 @@
     }
   }
 }
+
+.showMenu {
+  display: flex;
+  justify-content: flex-end;
+  background-color:#7B9D81;
+  // width: 80%;
+}
+
+.notShowMenu {
+  display: none;
+}

@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => {
     const pushUrl = () => {
         history.push(`${match.url}${linkUrl}`);
-    }
+  }
   return (
     <div
       style={{
