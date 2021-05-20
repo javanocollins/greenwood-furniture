@@ -1,3 +1,5 @@
+@import "../../assets/styles/breakpoints";
+
 .directory-menu {
     display: flex;
 }
@@ -12,22 +14,19 @@
         display: none;
     }
 }
-@media only screen and (max-width: 600px) {
-    .directory-menu {
-        display: none;
-    }
-}
+
 @media only screen and (max-width: 768px) {
     .directory-menu {
-        display: none;
+        display: flex;
     }
 }
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 1024px) {
     .directory-menu {
-        display: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
+
 }
-@media (max-width: 1024px) {
-}
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 }

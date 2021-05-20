@@ -24,6 +24,7 @@ export class ShopPage extends Component {
       </div>
     );
   }
+  
 }
 
 export default ShopPage;

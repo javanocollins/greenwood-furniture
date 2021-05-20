@@ -30,6 +30,7 @@ const Directory = () => {
       linkUrl: 'desks'
     },
   ];
+  
   return (
     <div className="directory-menu">
       {menuItems.map((menuItem) => (

@@ -32,7 +32,7 @@ const Header = () => {
                         onClick={showDropDown}
                         // onMouseLeave={hideDropDown}
                         className="nav-link"
-                        // to="/collection"
+                        to=""
                     >
                         Collection
                     </Link>

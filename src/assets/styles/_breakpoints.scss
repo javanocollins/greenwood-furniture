@@ -1,0 +1,24 @@
+$breakpoints: (
+    "small-phone": 320px,
+    "large-phone": 480px,
+    "tablet-portrait": 768px,
+    "tablet-landscape": 1024px,
+    "desktop": 1200px
+);
+
+// @import "../../assets/styles/breakpoints";
+
+// @media only screen and (max-width: map-get($breakpoints, "small-phone")) {
+// }
+
+// @media only screen and (max-width: map-get($breakpoints, "large-phone")) {
+// }
+
+// @media only screen and (max-width: map-get($breakpoints, "tablet-portrait")) {
+// }
+
+// @media only screen and (max-width: map-get($breakpoints, "tablet-landscape")) {
+// }
+
+// @media only screen and (max-width: map-get($breakpoints, "desktop")) {
+// }
