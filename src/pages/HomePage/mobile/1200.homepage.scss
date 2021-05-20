@@ -1,0 +1,23 @@
+@import "../../../assets/styles/breakpoints";
+@import "../../../assets/styles/colors";
+
+@media only screen and (max-width: map-get($breakpoints, "desktop")) {
+    .greetings-div {
+        line-height: 1;
+        text-align: left;
+    }
+
+    .greetings {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        line-height: 0.9;
+        color: $primary-color;
+    }
+
+    .collection-btn {
+        padding: 0.7rem 1rem;
+    }
+}

@@ -1,6 +1,8 @@
 @import "../../assets/styles/colors";
 @import "../../assets/styles/breakpoints";
 
+@import "./mobile/1024.homepage.scss";
+
 .showcase {
     display: flex;
     justify-content: space-around;
@@ -98,43 +100,10 @@
 //         width: 200px;
 //     }
 // }
-// @media only screen and (max-width: map-get($breakpoints, "large-phone")) {
-//     .about-sofa {
-//         width: 200px;
-//         // height: auto;
-//     }
-
-//     .about-section {
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-//         margin: 0 auto;
-//         padding: 1rem 0;
-//     }
-
-//     .about-paragraph {
-//         p {
-//             font-size: 1.2rem;
-//             line-height: 1.5;
-//             color: #ffffff;
-//             text-align: center;
-//         }
-//         width: 100%;
-//     }
-// }
-
-@media only screen and (max-width: 768px) {
-    .showcase {
-        display: flex;
-        justify-content: space-around;
-        height: 80vh;
-        align-items: center;
-    }
-
+@media only screen and (max-width: map-get($breakpoints, "large-phone")) {
     .about-sofa {
-        width: 100px;
-        margin-top: 3rem;
-        // display: none;
+        width: 200px;
+        // height: auto;
     }
 
     .about-section {
@@ -142,7 +111,7 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
     .about-paragraph {
@@ -150,142 +119,8 @@
             font-size: 1.2rem;
             line-height: 1.5;
             color: #ffffff;
-            // text-align: center;
-        }
-        width: 80%;
-    }
-
-    .identify-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-
-        .identify-info {
-            h2 {
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-                color: #e0ab78;
-                text-align: center;
-            }
-            p {
-                width: 100%;
-                font-size: 1.1rem;
-                line-height: 1.5;
-                text-align: center;
-            }
-        }
-    }
-
-    .iframe {
-        width: 50%;
-        height: 20%;
-    }
-}
-
-/*
-    Tablet Lanscape View
-*/
-@media only screen and (max-width: 1024px) {
-    .greetings-div {
-        line-height: 1;
-        text-align: left;
-    }
-
-    .greetings {
-        font-size: 1.5rem;
-    }
-
-    .title {
-        font-size: 1rem;
-        line-height: 0.9;
-        color: $primary-color;
-    }
-
-    .collection-btn {
-        padding: 0.7rem 0.9rem;
-    }
-
-    .showcase {
-        display: flex;
-        justify-content: space-around;
-        height: 40vh;
-        align-items: center;
-    }
-
-    .about-sofa {
-        width: 400px;
-        margin-top: 3rem;
-        // display: none;
-    }
-
-    .about-section {
-        // flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 auto;
-        padding: 3rem 0;
-    }
-
-    .about-paragraph {
-        p {
-            font-size: 0.8rem;
-            line-height: 1.5;
-            color: #ffffff;
             text-align: center;
         }
-        width: 40%;
-    }
-
-    .identify-section {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 65vh;
-
-        .identify-info {
-            h2 {
-                font-size: 2.5rem;
-                margin-bottom: 2rem;
-                text-align: center;
-            }
-            p {
-                margin: auto;
-                width: 80%;
-                font-size: 1.1rem;
-                line-height: 1.5;
-                text-align: center;
-            }
-        }
-    }
-
-    .iframe {
-        margin: 3rem 0 0;
-        width: 80%;
-        height: 40%;
-    }
-}
-
-@media only screen and (max-width: map-get($breakpoints, "desktop")) {
-    .greetings-div {
-        line-height: 1;
-        text-align: left;
-    }
-
-    .greetings {
-        font-size: 1.5rem;
-    }
-
-    .title {
-        font-size: 2rem;
-        line-height: 0.9;
-        color: $primary-color;
-    }
-
-    .collection-btn {
-        padding: 0.7rem 1rem;
+        width: 100%;
     }
 }

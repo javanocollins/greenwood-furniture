@@ -1,0 +1,87 @@
+/*
+    Tablet Lanscape View
+*/
+@import "../../../assets/styles/breakpoints";
+@import "../../../assets/styles/colors";
+
+@media only screen and (max-width: 1024px) {
+    .greetings-div {
+        line-height: 1;
+        text-align: left;
+    }
+
+    .greetings {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 1rem;
+        line-height: 0.9;
+        color: $primary-color;
+    }
+
+    .collection-btn {
+        padding: 0.7rem 0.9rem;
+    }
+
+    .showcase {
+        display: flex;
+        justify-content: space-around;
+        height: 60vh;
+        align-items: center;
+    }
+
+    .about-sofa {
+        width: 400px;
+        margin-top: 3rem;
+        // display: none;
+    }
+
+    .about-section {
+        // flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+
+    .about-paragraph {
+        p {
+            font-size: 0.8rem;
+            line-height: 1.5;
+            color: #ffffff;
+            text-align: center;
+        }
+        width: 40%;
+    }
+
+    .identify-section {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+
+        .identify-info {
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            p {
+                margin: auto;
+                width: 75%;
+                font-size: 1rem;
+                line-height: 1.5;
+                text-align: center;
+            }
+        }
+    }
+
+    .iframe {
+        margin: 3rem 0 0;
+        width: 80%;
+        height: 40%;
+    }
+}

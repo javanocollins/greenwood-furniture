@@ -61,9 +61,24 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
-}
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: map-get($breakpoints, "tablet-landscape")) {
+    .Footer {
+        &-container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background-color: rgb(53, 58, 64);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .row {
+            margin: 1.5rem 0;
+        }
+
+        &-name {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 @media only screen and (max-width: map-get($breakpoints, "tablet-portrait")) {
@@ -77,30 +92,14 @@
             flex-direction: column;
         }
 
-         .row {
+        .row {
             margin: 1.5rem 0;
         }
-
-        
     }
 }
 
-@media only screen and (max-width: map-get($breakpoints, "tablet-landscape")) {
-    .Footer {
-        &-container {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            background-color: rgb(53, 58, 64);
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-         .row {
-            margin: 1.5rem 0;
-        }
-
-        &-name {
-        font-size: 1.5rem;
-    }
-    }
+@media only screen and (max-width: 480px) {
+    
+}
+@media only screen and (max-width: 320px) {
 }

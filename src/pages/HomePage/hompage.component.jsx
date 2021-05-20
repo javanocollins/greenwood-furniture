@@ -4,6 +4,12 @@ import Directory from "../../components/directory/directory.component";
 import Payments from "../../components/footer/accepted-payments/payments.component";
 
 import "./homepage.styles.scss";
+import "./mobile/1200.homepage.scss";
+import "./mobile/1024.homepage.scss";
+import "./mobile/768.homepage.scss";
+import "./mobile/480.homepage.scss";
+import "./mobile/320.homepage.scss";
+
 
 const HomePage = () => {
     return (
