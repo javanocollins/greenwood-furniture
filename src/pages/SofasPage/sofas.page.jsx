@@ -11,7 +11,8 @@ import ProductItems from "../../components/product-items/product-items.component
 
 function SofasPage() {
     const sofas = SHOP_DATA[0]
-    console.log(sofas.items);
+    // console.log(sofas.items);
+    
     return <ProductItems products={sofas} />;
 }
 
