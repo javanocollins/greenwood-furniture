@@ -26,3 +26,9 @@
   width:240px;
   // height: 320px;
 }
+
+@media only screen and (max-width: 480px) {
+  .item {
+    margin: -1px;
+  }
+}

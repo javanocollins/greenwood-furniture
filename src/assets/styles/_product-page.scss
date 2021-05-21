@@ -1,4 +1,4 @@
-.ProductPage {
+.ProductPage-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -8,4 +8,16 @@
 .ProductPage-item {
     margin: .5rem 0;
     // display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+    .ProductPage-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem 0 5rem;
+    }
+
+    .ProductPage-title {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
