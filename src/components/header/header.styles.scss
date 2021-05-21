@@ -2,8 +2,8 @@
 }
 
 .navbar {
-  display: flex;
   padding: 1rem 7rem;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   // background-color: #F44006;
@@ -45,4 +45,13 @@
 
 .notShowMenu {
   display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .header {}
+  
+  .navbar {
+    padding: 2rem 3rem;
+    display: none;
+  }
 }

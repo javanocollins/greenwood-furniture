@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import DropDownMenu from "../DropDownMenu/drop-down-menu.component";
 
-import {withRouter} from 'react-router-dom'
+import { withRouter } from "react-router-dom";
+import MobileMenu from "./mobile-header/mobile-header";
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -44,7 +45,10 @@ const Header = () => {
                     </Link>
                 </div>
             </nav>
-            <div className={`${showMenu ? "showMenu" : "notShowMenu"} container`}>
+            <MobileMenu toggleDropDown={showDropDown} />
+            <div
+                className={`${showMenu ? "showMenu" : "notShowMenu"} container`}
+            >
                 <DropDownMenu />
             </div>
         </header>

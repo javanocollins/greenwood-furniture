@@ -23,7 +23,7 @@
     .collection-btn {
         display: block;
         margin: 1.5rem auto;
-        padding: 0.7rem 1rem;
+        padding: 1rem;
     }
 
     .about-sofa {
@@ -41,7 +41,7 @@
 
     .about-paragraph {
         p {
-            font-size: 0.8rem;
+            font-size: 1rem;
             line-height: 1.4;
             color: #ffffff;
             text-align: center;
@@ -50,10 +50,10 @@
     }
 
     .identify-section {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         align-items: center;
-        height: 75vh;
+        height: 100vh;
 
         .identify-info {
             h2 {
@@ -62,7 +62,7 @@
             }
             p {
                 width: 85%;
-                font-size: 0.8rem;
+                font-size: 1rem;
                 line-height: 1.6;
             }
         }
@@ -71,6 +71,6 @@
     .iframe {
         margin: 3rem 0 0;
         width: 80%;
-        height: 35%;
+        height: 30%;
     }
 }

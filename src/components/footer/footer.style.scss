@@ -1,7 +1,6 @@
 @import "../../assets/styles/breakpoints";
 
 .Footer {
-    // margin: 3rem 0 0;
     &-container {
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -18,6 +17,7 @@
             }
         }
     }
+
     &-name {
         color: #7b9d81;
         font-size: 2rem;
@@ -59,6 +59,7 @@
     &-text {
         margin-bottom: 32px;
     }
+
 }
 
 @media only screen and (max-width: map-get($breakpoints, "tablet-landscape")) {
@@ -79,6 +80,22 @@
             font-size: 1.5rem;
         }
     }
+
+    .row-4 {
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    &-text {
+        font-size: .8rem;
+        width: 100%;
+    }
+
+}
 }
 
 @media only screen and (max-width: map-get($breakpoints, "tablet-portrait")) {
