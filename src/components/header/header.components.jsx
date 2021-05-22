@@ -7,6 +7,8 @@ import DropDownMenu from "../DropDownMenu/drop-down-menu.component";
 
 import { withRouter } from "react-router-dom";
 import MobileMenu from "./mobile-header/mobile-header";
+import CartIcon from "../cart-icon/cart-icon.component";
+import CartDropwDown from "../cart-dropdown/cart-dropdown.component";
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -43,7 +45,9 @@ const Header = () => {
                     <Link className="nav-link" to="/signin">
                         Sign In
                     </Link>
+                    <CartIcon />
                 </div>
+                <CartDropwDown />
             </nav>
             <MobileMenu toggleDropDown={showDropDown} />
             <div
