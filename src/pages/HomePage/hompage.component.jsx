@@ -14,7 +14,7 @@ import "./mobile/320.homepage.scss";
 const HomePage = () => {
     return (
         <div className="homepage">
-            <div className="showcase">
+            <div className="showcase container">
                 <div className="greetings-div">
                     <h1 className="greetings">Welcome To</h1>
                     <h2 className="title">
@@ -29,7 +29,7 @@ const HomePage = () => {
                 </div>
                 <Directory />
             </div>
-            <section className="about-section">
+            <section className="about-section container">
                 <div className="about-paragraph">
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing

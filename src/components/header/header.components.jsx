@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import DropDownMenu from "../DropDownMenu/drop-down-menu.component";
 
+import { connect } from "react-redux";
+
 import { withRouter } from "react-router-dom";
 import MobileMenu from "./mobile-header/mobile-header";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropwDown from "../cart-dropdown/cart-dropdown.component";
 
-const Header = () => {
+const Header = ({ hidden }) => {
     const [showMenu, setShowMenu] = useState(false);
     const showDropDown = () => {
         if (!showMenu) {
@@ -31,14 +33,14 @@ const Header = () => {
                     <Logo className="logo" />
                 </Link>
                 <div className="nav-links">
-                    <Link
+                    <button
                         onClick={showDropDown}
                         // onMouseLeave={hideDropDown}
-                        className="nav-link"
-                        to=""
+                        className="nav-link drop-down-link"
+                        href=""
                     >
                         Collection
-                    </Link>
+                    </button>
                     <Link className="nav-link" to="/cart">
                         Cart
                     </Link>
@@ -47,7 +49,7 @@ const Header = () => {
                     </Link>
                     <CartIcon />
                 </div>
-                <CartDropwDown />
+                {hidden ? null : <CartDropwDown />}
             </nav>
             <MobileMenu toggleDropDown={showDropDown} />
             <div
@@ -59,4 +61,8 @@ const Header = () => {
     );
 };
 
-export default withRouter(Header);
+const mapStateToProps = ({ cart: { hidden } }) => ({
+    hidden,
+});
+
+export default connect(mapStateToProps)(Header);

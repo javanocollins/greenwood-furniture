@@ -6,3 +6,13 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 480px) {
+    .sign-in {
+        width: 100vw;
+    }
+
+    .custom-buttons {
+        flex-direction: column;
+    }
+}

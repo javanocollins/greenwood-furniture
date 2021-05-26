@@ -3,10 +3,9 @@
 }
 
 .DropDownMenu-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
 }
 
 .DropDownMenu-link {
@@ -14,6 +13,7 @@
     font-size: 1.1rem;
     padding: 1rem;
     margin: 0 2px;
+    text-align: right;
     text-transform: uppercase;
     transform: scale(1);
     transition: all 0.2s;
@@ -33,9 +33,5 @@
     .DropDownMenu-links {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .DropDownMenu-link {
-        font-size: 1.1rem;
     }
 }

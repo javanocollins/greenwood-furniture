@@ -27,3 +27,10 @@ a {
 button :focus {
   border: none;
 }
+
+@media only screen and (max-width: 480px) {
+  /* .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  } */
+}

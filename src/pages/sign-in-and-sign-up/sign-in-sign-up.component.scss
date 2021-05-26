@@ -2,3 +2,16 @@
     margin: 5rem 0 0;
     height: 80vh;
 }
+
+@media only screen and (max-width: 480px) {
+    .sign-in-sign-up {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+    }
+
+    .sign-in-sign-up.container {
+        padding: 0 3rem
+    }
+}

@@ -12,13 +12,10 @@ function ProductItems({ products }) {
         <div className="TablesPage ProductPage container">
             <h1 className="ProductPage-title">{products.title}</h1>
             <div className="ProductPage-container">
-                {products.items.map((item) => {
+                {products.items.map((item, index) => {
                     return (
-                        <div className="ProductPage-item">
-                            <CollectionItem
-                                items={products}
-                                collectionItem={item}
-                            />
+                        <div key={index} className="ProductPage-item">
+                            <CollectionItem items={products} item={item} />
                         </div>
                     );
                     console.log(products);

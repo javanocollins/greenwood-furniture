@@ -20,8 +20,8 @@
 }
 
 .title {
-    font-size: 4rem;
-    line-height: 0.9;
+    font-size: 3.5rem;
+    line-height: 1;
     color: $primary-color;
 }
 
@@ -51,7 +51,8 @@
     display: flex;
     justify-content: space-around;
     background-color: $primary-color;
-    padding: 6rem 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .about-paragraph {
@@ -72,7 +73,7 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 90vh;
 
