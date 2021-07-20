@@ -41,6 +41,7 @@ class App extends React.Component {
           <Route path="/pendants" component={PendantsPage} />
           <Route path="/desks" component={DesksPage} />
           <Route path="/tv-stands" component={TvStandsPage} />
+          <Route path="tv-sands" component={TvStandsPage}/>
         </Switch>
         <Footer />
       </div>

@@ -1,0 +1,77 @@
+@import "../../../assets//styles/breakpoints";
+
+@import "../../../assets/styles/breakpoints";
+@import "../../../assets/styles/colors";
+
+@media only screen and (max-width: map-get($breakpoints, "large-phone")) {
+    .showcase {
+        height: 70vh;
+        justify-content: center;
+    }
+    .greetings {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 0.9;
+        color: $primary-color;
+        text-align: center;
+    }
+
+    .collection-btn {
+        display: block;
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+
+    .about-sofa {
+        width: 300px;
+        height: auto;
+    }
+
+    .about-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto;
+        padding: 3rem 0;
+    }
+
+    .about-paragraph {
+        p {
+            font-size: .8rem;
+            line-height: 1.4;
+            color: #ffffff;
+            text-align: center;
+        }
+        width: 85%;
+    }
+
+    .identify-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin: 5rem 0;
+        align-items: center;
+        height: 100vh;
+
+        .identify-info {
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                width: 85%;
+                font-size: .8rem;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    .iframe {
+        margin: 3rem 0 0;
+        width: 80%;
+        height: 30%;
+    }
+}

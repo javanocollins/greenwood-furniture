@@ -18,7 +18,6 @@ function ProductItems({ products }) {
                             <CollectionItem items={products} item={item} />
                         </div>
                     );
-                    console.log(products);
                 })}
             </div>
         </div>
